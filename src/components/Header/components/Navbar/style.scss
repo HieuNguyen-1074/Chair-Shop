@@ -1,0 +1,106 @@
+@import "../../../../assets/style/valiable.scss";
+@import "../../../../assets/style/mixi.scss";
+.navbar {
+    width: 100%;
+    padding: 0;
+    margin-top: 0.2rem;
+
+    background: $navbarBackground;
+    &-top {
+        display: none;
+    }
+
+    ul {
+        margin: 0 auto;
+        margin-bottom: 0;
+
+        li {
+            display: inline-block;
+
+            text-align: center;
+
+            a {
+                display: inline-block;
+
+                padding: 0 1.5rem;
+                height: 50px;
+                line-height: 50px;
+
+                color: $blackColor;
+
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            &:hover {
+                a {
+                    color: $colorW;
+                }
+                transition: all 0.3s ease-in-out;
+                background: $colorMain;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 630px) {
+    .navbar-active {
+        transform: translateX(0%) !important;
+        -webkit-transform: translateX(0%) !important;
+        -moz-transform: translateX(0%) !important;
+        -ms-transform: translateX(0%) !important;
+        -o-transform: translateX(0%) !important;
+    }
+    .navbar {
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        left: 0;
+        padding: 0;
+        z-index: 1000;
+        margin-top: 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        &-top {
+            display: block !important;
+            &-icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 2rem;
+                transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                -moz-transform: translateX(100%);
+                -ms-transform: translateX(100%);
+                -o-transform: translateX(100%);
+                background: #e8e0e0;
+                padding: 0.5rem;
+                border-radius: 0 10px 10px 0;
+                -webkit-border-radius: 0 10px 10px 0;
+                -moz-border-radius: 0 10px 10px 0;
+                -ms-border-radius: 0 10px 10px 0;
+                -o-border-radius: 0 10px 10px 0;
+                cursor: pointer;
+            }
+        }
+        & ul {
+            @include displaySet(stretch, flex-start, nowrap, true);
+        }
+    }
+}
+@media only screen and (max-width: 530px) {
+    .navbar {
+        width: 80%;
+    }
+}

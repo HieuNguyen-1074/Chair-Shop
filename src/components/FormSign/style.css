@@ -1,0 +1,44 @@
+.formsignup {
+  width: 100%;
+  margin-bottom: 1rem;
+  margin: 0 !important;
+}
+
+.formsignup button {
+  padding: 100px;
+}
+
+.formsignup button {
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  padding: 0.5rem 1.3rem;
+  background: #ed6c63;
+  color: aliceblue;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.formsignup button:hover {
+  background: black;
+}
+
+.formsignup h1 {
+  text-align: center;
+}
+
+.formsignup input {
+  width: 100%;
+}
+
+.formsignup__bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}

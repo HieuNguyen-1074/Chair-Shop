@@ -1,0 +1,16 @@
+@import "../../assets/style/mixi.scss";
+@import "../../assets//style/valiable.scss";
+
+// @import url(../../assets/style/mixi.scss);
+// @import url(../../assets/style/valiable.scss);
+
+.user__infor {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba($color: $blackColor, $alpha: 0.5);
+}

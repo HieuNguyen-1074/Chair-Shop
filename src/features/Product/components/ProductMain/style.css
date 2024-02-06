@@ -1,0 +1,40 @@
+.main {
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 950px) {
+  .main {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .main {
+    max-width: 40rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    max-width: 35rem;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .main {
+    max-width: unset;
+    flex-direction: column;
+  }
+  .main > div {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.linkb {
+    margin: 2rem auto;
+    margin-top: 3rem;
+    max-width: 60rem;
+
+    @include displaySet(center, center, nowrap, false);
+    a {
+        width: 150px;
+        padding: 0.4rem 1rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba($color: $blackColor, $alpha: 0.3);
+        img {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 657px) {
+    .linkb {
+        a {
+            width: 130px;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .linkb {
+        a {
+            width: 110px;
+        }
+    }
+}
+@media screen and (max-width: 460px) {
+    .linkb {
+        flex-wrap: wrap;
+        padding: 3rem;
+        padding-top: 0.5rem;
+        a {
+            border: none;
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.top-admin {
+  height: 70px;
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.top-admin h1 {
+  font-size: 1.5rem;
+}
+
+.top-admin img {
+  height: 25px;
+  margin: 0 1rem;
+}
+
+.top-admin-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.top-admin-right .box {
+  position: relative;
+}
+
+.top-admin-right .box span {
+  font-size: 0.6rem;
+  padding: 0 0.2rem;
+  font-weight: 900;
+  right: 10px;
+  background: #fff;
+  border: 1px solid black;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

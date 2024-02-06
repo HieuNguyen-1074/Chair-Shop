@@ -1,0 +1,52 @@
+@import "../../assets/style/mixi.scss";
+
+.cart {
+    margin-right: 2rem;
+    &-btn {
+        cursor: pointer;
+        span {
+            display: inline-block;
+            font-size: 0.6rem;
+            padding: 0 0.2rem;
+
+            position: relative;
+            top: -7px;
+            left: -7px;
+            background: #fff;
+            font-weight: 900;
+            border: 1px solid #000;
+
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+        }
+    }
+    &-icon {
+        width: 30px;
+        height: 30px;
+    }
+    & > div:nth-of-type(1) {
+        @include displaySet(stretch, center, nowrap, false);
+        img {
+            width: 24px;
+            cursor: pointer;
+        }
+        p {
+            margin: 0;
+            margin-left: 0.4rem;
+            cursor: pointer;
+        }
+    }
+}
+@media only screen and (max-width: 630px) {
+    .cart {
+        margin-right: 5px;
+
+        &-icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

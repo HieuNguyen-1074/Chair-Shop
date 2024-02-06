@@ -1,0 +1,12 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.offer {
+    margin: 2rem auto;
+    margin-top: 3rem;
+    max-width: 60rem;
+    padding: 0 0.5rem;
+    position: relative;
+
+    @include displaySet(space-between, center, nowrap, false);
+}

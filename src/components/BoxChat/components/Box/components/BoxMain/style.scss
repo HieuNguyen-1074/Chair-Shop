@@ -1,0 +1,59 @@
+@import "../../../../../../assets/style/mixi.scss";
+@import "../../../../../../assets/style/valiable.scss";
+
+.box-chat-box-main {
+    
+    height: 602px !important;
+    .box-message{
+        width: 100%;
+        height: 100px;
+        margin-top: .6rem;
+        resize: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+    }
+    // @include displaySet(stretch, stretch, nowrap, true);
+    // overflow-y: scroll;
+    .box-message {
+        height: 83%;
+        padding: 0 1rem;
+        padding-bottom: 1rem;
+        @include displaySet(stretch, stretch, nowrap, true);
+        overflow-y: scroll;
+
+        flex-direction: column-reverse !important;
+        & > div {
+       
+            max-width: 45%;
+            border: 1px solid;
+            border-radius: 5px;
+            height: auto;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            &:nth-child(odd) {
+                align-self: flex-end;
+            }
+        }
+    }
+    .input {
+        // position: absolute;
+        // bottom: 0;
+        padding: 0 1rem;
+        border-top: 1px solid;
+        padding-top: 0.5rem;
+        @include displaySet(center, center, nowrap, false);
+        & input {
+            padding: 0.4rem !important;
+        }
+        & > svg {
+            width: 30px;
+            height: 30px;
+            margin-left: 0.6rem;
+            cursor: pointer;
+        }
+    }
+}

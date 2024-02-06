@@ -1,0 +1,128 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.managemain {
+}
+.tab {
+    &:hover {
+        background: #fff;
+    }
+}
+.MuiBox-root {
+    padding: 2rem 0 !important;
+}
+@media screen and(max-width : 995px) {
+    .makeStyles-root-37 {
+        padding: 0 1rem !important;
+    }
+}
+@media screen and(max-width : 985px) {
+    .tab {
+        font-size: 0.8rem;
+    }
+}
+@media screen and(max-width : 820px) {
+    .tab {
+        font-size: 0.8rem;
+    }
+    .MuiMenu-list {
+        li {
+            font-size: 0.8rem !important;
+        }
+    }
+    .await {
+    }
+}
+@media screen and(max-width : 505px) {
+    .MuiTable-root {
+        & * {
+            font-size: 0.6rem !important;
+        }
+    }
+    .tab {
+        font-size: 0.6rem;
+    }
+    .await,
+    .confirm,
+    .received {
+        & input {
+            font-size: 0.6rem !important;
+        }
+        & .MuiOutlinedInput-root {
+            font-size: 0.6rem !important;
+            position: relative;
+            border-radius: 4px;
+        }
+        & .right {
+            span {
+                font-size: 0.6rem !important;
+            }
+            .MuiPopover-paper {
+                ul {
+                    li {
+                        font-size: 0.6rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width : 380px) {
+    .tab {
+        font-size: 0.5rem;
+    }
+}
+@media screen and(max-width : 887px) {
+    .await,
+    .confirm,
+    .received {
+        & input {
+            font-size: 0.8rem;
+        }
+        & .MuiOutlinedInput-root {
+            font-size: 0.8rem;
+            position: relative;
+            border-radius: 4px;
+        }
+        & .right {
+            span {
+                font-size: 0.8rem;
+            }
+            .MuiPopover-paper {
+                ul {
+                    li {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width : 770px) {
+    .await,
+    .confirm,
+    .received {
+        & .top-manage {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+@media screen and(max-width : 423px) {
+    .await,
+    .confirm,
+    .received {
+        & input {
+            padding: 0.4rem;
+        }
+        & .MuiOutlinedInput-root {
+            padding: 0rem;
+        }
+        .MuiSelect-select {
+            padding: 0.6rem !important;
+        }
+        & .right {
+            flex-direction: column;
+        }
+    }
+}

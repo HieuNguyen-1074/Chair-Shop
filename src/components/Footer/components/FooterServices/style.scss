@@ -1,0 +1,22 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.footer__services {
+    h1 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+    &--list {
+        a {
+            display: block;
+            margin-top: 0.3rem;
+
+            text-decoration: none !important;
+        }
+    }
+}
+@media only screen and (max-width: 830px) {
+    .footer__services {
+        text-align: center;
+    }
+}

@@ -1,0 +1,31 @@
+.form-admin {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.form-admin-left {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-admin-left > div {
+  margin-top: 1rem;
+}
+
+.form-admin-left span {
+  margin-top: 0.8rem;
+}
+
+.avatar-admin {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0000 !important;
+  margin: 0 auto;
+}
+
+.avatar-admin > img {
+  width: 100%;
+  min-height: 100%;
+}

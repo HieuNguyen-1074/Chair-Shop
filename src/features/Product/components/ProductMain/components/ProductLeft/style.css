@@ -1,0 +1,16 @@
+.product-img-item {
+  width: 250px !important;
+}
+
+.product-slide {
+  width: 250px !important;
+}
+
+@media screen and (max-width: 880px) {
+  .product-img-item {
+    width: 200px !important;
+  }
+  .product-slide {
+    width: 200px !important;
+  }
+}

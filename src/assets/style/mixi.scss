@@ -1,0 +1,18 @@
+@mixin xPos($x) {
+    -webkit-transform: translateX($x);
+    -moz-transform: translateX($x);
+    -ms-transform: translateX($x);
+    transform: translateX($x);
+}
+
+@mixin displaySet($justify-c, $align-i, $wrap, $columm) {
+    display: flex;
+    justify-content: $justify-c;
+    align-items: $align-i;
+    flex-wrap: $wrap;
+    @if ($columm) {
+        flex-direction: column;
+    } @else {
+        flex-direction: row;
+    }
+}

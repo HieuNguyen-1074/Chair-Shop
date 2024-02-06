@@ -1,0 +1,26 @@
+.update-left-form {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 0 0.3rem;
+  border-radius: 100%;
+  border: 1px solid #ed6c63;
+  width: fit-content;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.update-left-form span {
+  padding: 0;
+}
+
+.update-left-form svg {
+  width: 40px;
+  height: 40px;
+}
+
+.update-left-form:visited {
+  background: #ed6c63;
+}

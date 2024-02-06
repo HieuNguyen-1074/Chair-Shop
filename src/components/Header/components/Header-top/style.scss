@@ -1,0 +1,89 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.header__top {
+    padding: 1rem 0rem;
+    // margin: 0 1rem;
+
+    border-bottom: 1px solid $blackColor;
+    // &--right {
+    //     margin-left: 4rem;
+
+    //     & > div {
+    //         &:last-of-type {
+    //             p {
+    //                 margin-right: 0;
+    //             }
+    //         }
+    //         @include displaySet(stretch, center, nowrap, false);
+    //     }
+
+    //     @include displaySet(stretch, center, wrap, false);
+    // }
+
+    &--left {
+        & > * {
+            @include displaySet(center, center, nowrap, false);
+        }
+        @include displaySet(center, center, wrap, false);
+    }
+
+    @include displaySet(center, center, nowrap, false);
+}
+
+@media only screen and (max-width: 830px) {
+    .header__top {
+        &--left {
+            & > * {
+                height: 20px;
+                &:nth-of-type(3) {
+                    margin-top: 0 !important;
+                }
+                &:nth-of-type(4) {
+                    margin-top: 0.4rem !important;
+                }
+            }
+        }
+
+        @include displaySet(center, center, wrap, false);
+    }
+}
+@media only screen and (max-width: 555px) {
+    .header__top {
+        &--left {
+            font-size: 0.8rem;
+        }
+
+        @include displaySet(center, center, wrap, false);
+    }
+}
+@media only screen and (max-width: 670px) {
+    .header__top {
+        &--left {
+            & > * {
+                &:nth-of-type(4),
+                &:nth-of-type(3) {
+                    margin-top: 0.5rem !important;
+                }
+            }
+        }
+
+        @include displaySet(center, center, wrap, false);
+    }
+}
+@media only screen and (max-width: 425px) {
+    .header__top {
+        &--left {
+            & > * {
+                &:nth-of-type(2) {
+                    align-self: flex-end;
+                    p {
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+        }
+
+        @include displaySet(center, center, wrap, false);
+    }
+}

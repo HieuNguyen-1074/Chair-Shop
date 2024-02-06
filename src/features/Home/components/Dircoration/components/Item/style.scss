@@ -1,0 +1,181 @@
+@import "../../../../../../assets/style/mixi.scss";
+@import "../../../../../../assets/style/valiable.scss";
+
+.decroration__item {
+ 
+
+    @include displaySet(center, center, nowrap, false);
+
+    &--left {
+        height: 100%;
+        width: 47%;
+        background: rgba($color: $colorMain, $alpha: 0.3);
+        padding: 2rem;
+        // margin-left: 0.4rem;
+        position: relative;
+        .price {
+            position: absolute;
+            top: 1rem;
+            right: 3rem;
+            background: $colorMain;
+            color: $colorW;
+            padding: 1rem 1rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    &--right {
+        width: 50%;
+        height: 100%;
+        // padding: 1rem;
+        padding-left: 1rem;
+        text-transform: uppercase;
+        margin-left: 0.3rem;
+        background: rgba($color: $blackColor, $alpha: 0.1);
+
+        @include displaySet(center, start, false, true);
+
+        p {
+            color: $colorMain;
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 1.3rem;
+        }
+        button {
+            text-transform: uppercase;
+            margin-top: 0.6rem;
+            padding: 0.5rem 1.3rem;
+            background: $colorMain;
+            color: aliceblue;
+            border: none;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: $blackColor;
+            }
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .decroration__item {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .decroration__item {
+        height: 200px;
+        &--right {
+            p {
+                color: $colorMain;
+                font-size: 0.7rem;
+            }
+            h1 {
+                font-size: 1rem;
+            }
+            button {
+                text-transform: uppercase;
+                margin-top: 0.6rem;
+                padding: 0.5rem 1.3rem;
+                font-size: 0.7rem;
+            }
+        }
+        &--left {
+            .price {
+                position: absolute;
+                top: 1rem;
+                right: 3rem;
+                background: $colorMain;
+                color: $colorW;
+                padding: 0.6rem;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+    .decroration__item {
+        height: 160px;
+
+        &--right {
+            p {
+                color: $colorMain;
+                font-size: 0.5rem;
+            }
+            h1 {
+                font-size: 0.8rem;
+            }
+            button {
+                text-transform: uppercase;
+                margin-top: 0.6rem;
+                padding: 0.5rem 1.3rem;
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    .decroration__item {
+        height: 130px;
+
+        &--right {
+            p {
+                color: $colorMain;
+                font-size: 0.5rem;
+            }
+            h1 {
+                font-size: 0.8rem;
+            }
+            button {
+                text-transform: uppercase;
+                margin-top: 0.6rem;
+                padding: 0.5rem 1.3rem;
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 470px) {
+    .decroration__item {
+        width: 100%;
+        height: 180px;
+        margin: 0 0.3rem;
+
+        &--right {
+            p {
+                color: $colorMain;
+                font-size: 0.5rem;
+            }
+            h1 {
+                font-size: 0.8rem;
+            }
+            button {
+                text-transform: uppercase;
+                margin-top: 0.6rem;
+                padding: 0.5rem 1.3rem;
+                font-size: 0.5rem;
+            }
+        }
+        &--left {
+            img {
+                width: 70%;
+                margin-left: 1rem;
+            }
+        }
+    }
+}

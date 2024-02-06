@@ -1,0 +1,103 @@
+.wrapper__right {
+  margin-left: 7rem;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.wrapper__right img {
+  width: 400px;
+object-position: center;
+  height: 100%;
+}
+
+.wrapper__right .slick-prev,
+.wrapper__right .slick-next {
+  top: unset !important;
+  bottom: -3.4rem !important;
+  background-color: #ed6c63 !important;
+  width: 30px;
+  height: 30px;
+  padding: 0.2rem;
+}
+
+.wrapper__right .slick-prev polygon,
+.wrapper__right .slick-next polygon {
+  fill: #fff !important;
+}
+
+.wrapper__right .slick-prev:hover,
+.wrapper__right .slick-next:hover {
+  background-color: black !important;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.wrapper__right .slick-prev {
+  left: unset !important;
+  right: 2.3rem !important;
+}
+
+.wrapper__right .slick-next {
+  left: unset !important;
+  right: 0 !important;
+}
+
+@media only screen and (max-width: 1030px) {
+  .wrapper__right {
+    margin-left: 7rem;
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .wrapper__right {
+    width: 170px;
+    height: 230px;
+  }
+  .wrapper__right img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .wrapper__right {
+    margin-left: 1rem;
+  }
+  .wrapper__right .slick-prev {
+    left: unset !important;
+    right: 2.3rem !important;
+    width: 25px;
+    height: 25px;
+  }
+  .wrapper__right .slick-next {
+    left: unset !important;
+    right: 0 !important;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .wrapper__right {
+    margin-left: 0rem;
+  }
+  .wrapper__right .slick-prev {
+    left: unset !important;
+    right: 90% !important;
+    width: 25px;
+    height: 25px;
+  }
+  .wrapper__right .slick-next {
+    left: unset !important;
+    right: 0% !important;
+    width: 25px;
+    height: 25px;
+  }
+}

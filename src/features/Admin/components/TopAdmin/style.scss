@@ -1,0 +1,35 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.top-admin {
+    height: 70px;
+    width: 100% !important;
+    @include displaySet(space-between, center, nowrap, false);
+    h1 {
+        font-size: 1.5rem;
+    }
+    & img {
+        height: 25px;
+        margin: 0 1rem;
+    }
+    &-right {
+        @include displaySet(space-between, center, nowrap, false);
+        .box {
+            position: relative;
+            span {
+                font-size: 0.6rem;
+                padding: 0 0.2rem;
+                font-weight: 900;
+                right: 10px;
+                background: $colorW;
+                border: 1px solid $blackColor;
+                position: absolute;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+        }
+    }
+}

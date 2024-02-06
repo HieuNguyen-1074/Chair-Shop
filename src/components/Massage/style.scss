@@ -1,0 +1,22 @@
+.list-massage {
+    position: fixed;
+    top: 0;
+    // background: #000;
+    right: 5px;
+    width: fit-content;
+
+    height: fit-content;
+    z-index: 10000000000000000000000;
+    // pointer-events: none;
+    .mes {
+        width: 100%;
+        // background: #000;
+        border: 1px solid #000;
+
+        transition: all 2s ease-in-out;
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        -ms-transition: all 2s ease-in-out;
+        -o-transition: all 2s ease-in-out;
+    }
+}

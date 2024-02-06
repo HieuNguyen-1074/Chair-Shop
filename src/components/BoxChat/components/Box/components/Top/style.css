@@ -1,0 +1,34 @@
+.box-chat-box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid;
+}
+
+.box-chat-box-top h1 {
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.box-chat-box-top > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.box-chat-box-top-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.box-chat-box-top-left > svg {
+  width: 20px;
+  color: #0cf72c;
+  height: 20px;
+}

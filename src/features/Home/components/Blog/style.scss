@@ -1,0 +1,27 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.blog {
+    margin: 2rem auto;
+    margin-top: 3rem;
+    max-width: 60rem;
+
+    & > h1 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        width: fit-content;
+        margin-bottom: 2rem;
+
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 110%;
+            right: -50%;
+            width: 150%;
+
+            height: 3px;
+            background: $colorMain;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import "../../assets/style/mixi.scss";
+@import "../../assets/style/valiable.scss";
+
+.formsignup {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    & button {
+        padding: 100px;
+    }
+    & button {
+        text-transform: uppercase;
+        margin-top: 0.6rem;
+        padding: 0.5rem 1.3rem;
+        background: $colorMain;
+        color: aliceblue;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: $blackColor;
+        }
+    }
+    h1 {
+        text-align: center;
+    }
+    margin: 0 !important;
+    input {
+        width: 100%;
+    }
+    &__bottom {
+        margin-top: 2rem;
+        @include displaySet(space-between, center, nowrap, false);
+    }
+}

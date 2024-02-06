@@ -1,0 +1,157 @@
+.footer {
+  margin: 2rem auto;
+  margin-top: 3rem;
+  max-width: 60rem;
+  border-top: 1px solid;
+}
+
+.footer .footertop {
+  margin: 2rem auto;
+  margin-top: 3rem;
+  max-width: 60rem;
+
+}
+
+.footer .footertop a {
+  padding-top: 0.2rem;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: black;
+}
+
+@media screen and (max-width: 995px) {
+  .footer {
+    margin: 2rem auto;
+    margin-top: 3rem;
+    max-width: 60rem;
+    border-top: 1px solid;
+  }
+  .footer .footertop {
+    margin: 2rem auto;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    max-width: 60rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .footer .footertop a {
+    padding-top: 0.2rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .footer .footertop > div:not(:nth-of-type(1)) {
+    text-align: center;
+  }
+  .footer .footertop > div:last-of-type {
+    margin-top: 2rem;
+  }
+  .footer .footertop > div:last-of-type h1 {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+  }
+  .footer .footertop > div:last-of-type h1::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -50%;
+    width: 200%;
+    height: 2px;
+    background: #000;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .footer .footertop {
+    margin-top: 0px;
+    flex-wrap: wrap;
+  }
+  .footer .footertop > div {
+    padding: 0 1rem;
+  }
+  .footer .footertop > div:nth-of-type(1) {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .footer .footertop > div:nth-of-type(1) p {
+    width: 100%;
+  }
+  .footer .footertop > div:nth-of-type(1) > div {
+    padding-top: 0.5rem;
+  }
+  .footer .footertop > div:nth-of-type(2) {
+    text-align: left;
+  }
+  .footer .footertop > div:nth-of-type(4) {
+    text-align: right;
+  }
+  .footer .footertop > div:not(:nth-of-type(1)) {
+    width: 33.33333%;
+  }
+  .footer .footertop > div:last-of-type {
+    width: 100%;
+  }
+  .footer .footertop > div:last-of-type h1 {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+  }
+  .footer .footertop > div:last-of-type h1::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -50%;
+    width: 200%;
+    height: 2px;
+    background: #000;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .footer .footertop a {
+    font-size: 0.8rem !important;
+  }
+  .footer .footertop > div:nth-of-type(1) {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .footer .footertop > div:nth-of-type(1) p {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .footer .footertop > div:nth-of-type(1) > div {
+    padding-top: 0.5rem;
+  }
+  .footer .footertop > div:not(:nth-of-type(1)) {
+    width: 33.33333%;
+  }
+  .footer .footertop > div:not(:nth-of-type(1)) h1 {
+    font-size: 1rem;
+  }
+  .footer .footertop > div:last-of-type {
+    width: 100%;
+  }
+  .footer .footertop > div:last-of-type h1 {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+  }
+  .footer .footertop > div:last-of-type h1::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -50%;
+    width: 200%;
+    height: 2px;
+    background: #000;
+  }
+}

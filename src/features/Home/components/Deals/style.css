@@ -1,0 +1,9 @@
+.deal {
+  margin: 2rem auto;
+  margin-top: 3rem;
+  max-width: 60rem;
+}
+
+.deal__slider {
+  margin: 3rem auto;
+}

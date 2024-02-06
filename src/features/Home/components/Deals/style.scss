@@ -1,0 +1,9 @@
+@import "../../../../assets/style/valiable.scss";
+.deal {
+    margin: 2rem auto;
+    margin-top: 3rem;
+    max-width: 60rem;
+    &__slider {
+        margin: 3rem auto;
+    }
+}

@@ -1,0 +1,12 @@
+.offer {
+  margin: 2rem auto;
+  margin-top: 3rem;
+  max-width: 60rem;
+  padding: 0 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}

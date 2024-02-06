@@ -1,0 +1,24 @@
+@import "../../../../../../assets/style/mixi.scss";
+@import "../../../../../../assets/style/valiable.scss";
+.box-chat-box-top {
+    @include displaySet(space-between, flex-end, nowrap, false);
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid;
+    h1 {
+        font-size: 1rem !important;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    & > svg {
+        width: 20px;
+        height: 20px;
+    }
+    &-left {
+        @include displaySet(space-between, center, nowrap, false);
+        & > svg {
+            width: 20px;
+            color: rgb(12, 247, 44);
+            height: 20px;
+        }
+    }
+}
