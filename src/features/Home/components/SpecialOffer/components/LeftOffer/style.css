@@ -1,0 +1,119 @@
+.offer__left {
+  margin-right: 2rem;
+  align-self: start;
+}
+
+.offer__left h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #ed6c63;
+}
+
+.offer__left h2 {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.offer__left h3 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.offer__left button {
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  padding: 0.5rem 1.3rem;
+  background: #ed6c63;
+  color: aliceblue;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.offer__left button:hover {
+  background: black;
+}
+
+@media screen and (max-width: 810px) {
+  .offer__left h1 {
+    font-size: 1.2rem;
+  }
+  .offer__left h2 {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .offer__left h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  .offer__left button {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .offer__left {
+    margin-right: 2rem;
+    align-self: start;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 1.7rem;
+  }
+  .offer__left h1 {
+    font-size: 1.1rem;
+  }
+  .offer__left h2 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .offer__left h3 {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .offer__left {
+    margin-right: 2rem;
+    align-self: start;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 1.7rem;
+  }
+  .offer__left h1 {
+    font-size: 0.8rem;
+  }
+  .offer__left h2 {
+    font-size: 0.9rem;
+  }
+  .offer__left h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 420px) and (max-width: 468px) {
+  .offer__left {
+    margin-right: 2rem;
+    align-self: start;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  .offer__left h1 {
+    font-size: 0.6rem;
+  }
+  .offer__left h2 {
+    font-size: 0.7rem;
+  }
+  .offer__left h3 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: white;
+  }
+}

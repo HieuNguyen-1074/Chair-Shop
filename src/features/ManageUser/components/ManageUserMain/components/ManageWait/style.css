@@ -1,0 +1,16 @@
+@media screen and (max-width: 887px) {
+  .await input {
+    font-size: 0.8rem;
+  }
+  .await .MuiOutlinedInput-root {
+    font-size: 0.8rem;
+    position: relative;
+    border-radius: 4px;
+  }
+  .await .right span {
+    font-size: 0.8rem;
+  }
+  .await .right .MuiPopover-paper ul li {
+    font-size: 0.8rem;
+  }
+}

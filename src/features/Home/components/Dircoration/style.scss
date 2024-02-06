@@ -1,0 +1,10 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.decroration {
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 60rem;
+
+    @include displaySet(center, center, nowrap, false);
+}

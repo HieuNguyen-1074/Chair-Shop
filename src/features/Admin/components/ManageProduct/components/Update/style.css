@@ -1,0 +1,78 @@
+.addmin-update {
+  width: 600px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+}
+
+.addmin-update .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 700px;
+  padding: 2rem;
+  box-sizing: border-box;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background: #ffff;
+}
+
+.addmin-update .container form {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+.addmin-update .container form fieldset {
+  margin-right: 0.5rem;
+}
+
+.addmin-update .container form::-webkit-scrollbar {
+  width: 10px;
+  padding: 2rem;
+}
+
+.addmin-update .container form::-webkit-scrollbar-track {
+  background: #b4a5a5;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.addmin-update .container form::-webkit-scrollbar-thumb {
+  background: #3a3535;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.addmin-update-content {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.addmin-update-content > div:nth-of-type(1) {
+  width: 38%;
+}
+
+.addmin-update-content > div:nth-of-type(2) {
+  width: 51%;
+}

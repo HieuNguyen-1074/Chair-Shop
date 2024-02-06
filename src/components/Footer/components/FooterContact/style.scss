@@ -1,0 +1,50 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.footer__contact {
+    img {
+        width: 90px;
+    }
+    &--main {
+        @include displaySet(start, start, nowrap, true);
+        padding-top: 2rem;
+        p {
+            padding-top: 0.2rem;
+            margin-bottom: 0px !important;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            color: $blackColor;
+            text-decoration: none !important;
+        }
+    }
+    &--gettouch {
+        padding-top: 1.5rem;
+        h1 {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+        &-list {
+            a {
+                &:not(:last-of-type) {
+                    padding-right: 0.5rem;
+                }
+                img {
+                    width: 20px;
+                    transition: all 0.3s ease-in-out;
+
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

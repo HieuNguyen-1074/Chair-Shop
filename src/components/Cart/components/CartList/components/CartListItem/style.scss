@@ -1,0 +1,80 @@
+@import "../../../../../../assets/style/mixi.scss";
+@import "../../../../../../assets/style/valiable.scss";
+
+.cart__list--item {
+    margin-right: 2rem;
+    padding: 0 1rem;
+    width: 65%;
+
+    h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    @include displaySet(space-between, center, nowrap, false);
+    & > div {
+        margin-left: 2rem;
+    }
+    &-infor {
+        margin-right: auto;
+        margin-left: 0 !important;
+        @include displaySet(stretch, center, nowrap, false);
+        img {
+            width: 60px !important;
+        }
+        &-main {
+            padding-left: 1rem;
+            h1{
+                width: 100px;
+                word-break: normal;
+            }
+            button {
+                background: $colorMain;
+                color: $colorW;
+            }
+        }
+    }
+    &-quality {
+        &-main {
+            @include displaySet(stretch, center, nowrap, false);
+            svg {
+                margin: 0 0.4rem;
+                cursor: pointer;
+                &:nth-of-type(1) {
+                    margin-top: -6px;
+                }
+            }
+        }
+    }
+}
+@media (max-width : 610px) {
+    .cart__list--item {
+     
+        padding-top: 0.6rem;
+
+        h1 {
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        &-infor {
+            &-main {
+                button {
+                    padding: 0.2rem;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+        &-quality {
+            & button {
+                font-size: 0.7rem;
+                padding: 0.2rem 0rem;
+            }
+            &-main {
+                svg {
+                    margin: 0 0.4rem;
+                    width: 10px;
+                }
+            }
+        }
+    }
+}

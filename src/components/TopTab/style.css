@@ -1,0 +1,39 @@
+.top-manage {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.top-manage .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.top-manage .right p {
+  margin-bottom: 0 !important;
+  align-self: flex-end;
+  text-transform: capitalize;
+}
+
+.top-manage .right > div {
+  margin-left: 1rem;
+}
+
+.top-manage .right > div p {
+  margin-bottom: 0 !important;
+}
+
+.top-manage-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}

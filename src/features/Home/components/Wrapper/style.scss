@@ -1,0 +1,12 @@
+@import "../../../../assets/style/mixi.scss";
+
+.wrapper {
+    margin-top: 4rem;
+    @include displaySet(center, center, nowrap, false);
+}
+@media only screen and (max-width: 470px) {
+    .wrapper {
+        margin-top: 4rem;
+        flex-direction: column !important;
+    }
+}

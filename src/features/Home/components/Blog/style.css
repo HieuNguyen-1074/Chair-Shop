@@ -1,0 +1,23 @@
+.blog {
+  margin: 2rem auto;
+  margin-top: 3rem;
+  max-width: 60rem;
+}
+
+.blog > h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  width: fit-content;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.blog > h1::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  right: -50%;
+  width: 150%;
+  height: 3px;
+  background: #ed6c63;
+}

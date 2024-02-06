@@ -1,0 +1,15 @@
+.decroration {
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 60rem;
+  display: flex;
+  gap: 0 10px;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-y: auto;
+}
+.decroration::-webkit-scrollbar{
+  display: none;
+}

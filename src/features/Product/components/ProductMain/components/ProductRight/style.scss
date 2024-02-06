@@ -1,0 +1,151 @@
+@import "../../../../../../assets/style/mixi.scss";
+@import "../../../../../../assets/style/valiable.scss";
+
+button {
+    text-transform: uppercase;
+    margin-top: 0.6rem;
+    padding: 0.5rem 1.3rem;
+    background: $colorMain;
+    color: aliceblue;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: $blackColor;
+    }
+}
+.main-right {
+    margin-left: 4rem;
+    // min-width: 20vw;
+    width: 500px;
+    flex: 1;
+    &-top {
+        @include displaySet(space-between, center, nowrap, false);
+        & > h1 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+        .rating {
+            // padding-top: 1.3rem;
+            & > * {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &-next {
+        padding-top: 1rem;
+        @include displaySet(space-between, start, nowrap, false);
+        h1 {
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin-bottom: 0px;
+            color: rgba($color: #000000, $alpha: 0.4);
+        }
+        p {
+            color: $colorMain;
+            font-size: 2rem;
+            margin-top: 0px;
+        }
+    }
+}
+.detail {
+    box-shadow: none;
+    text-transform: capitalize;
+    h1 {
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+
+    width: 100% !important;
+}
+.bottom {
+    margin-top: 1rem;
+    @include displaySet(space-between, center, nowrap, false);
+    h1 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: rgba($color: #000000, $alpha: 0.4);
+    }
+}
+.quality {
+    width: 120px;
+
+    &-main {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(145, 145, 145, 1) 0%,
+            rgba(202, 202, 202, 1) 0%,
+            rgba(242, 239, 239, 1) 0%,
+            rgba(247, 244, 244, 1) 50%,
+            rgba(244, 239, 239, 1) 100%
+        );
+        padding: 0.2rem 0.4rem;
+        margin-top: 0.5rem;
+        border: 1px solid rgba($color: #000000, $alpha: 0.07);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        @include displaySet(space-between, center, nowrap, false);
+        &-icon {
+            background: $colorW;
+            padding: 0.2rem;
+            width: 23px;
+            height: 23px;
+            border: 1px solid rgba($color: #fff, $alpha: 0.1);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            cursor: pointer;
+
+            &:active {
+                fill: rgb(177, 172, 172);
+                path {
+                    stroke: rgb(177, 172, 172);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 720px) {
+    .main-right {
+        margin-left: 4rem;
+
+        &-top {
+            & > h1 {
+                text-transform: uppercase;
+                font-size: 1.1rem;
+            }
+            .rating {
+                // padding-top: 1.3rem;
+                & > * {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        &-next {
+            p {
+                color: $colorMain;
+                font-size: 1.4rem;
+                margin-top: 0px;
+            }
+        }
+    }
+    .quality {
+        width: 90px;
+    }
+    button {
+        font-size: 0.8rem;
+    }
+}

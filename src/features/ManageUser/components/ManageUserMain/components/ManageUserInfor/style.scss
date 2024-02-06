@@ -1,0 +1,60 @@
+@import "../../../../../../assets/style/mixi.scss";
+@import "../../../../../../assets/style/valiable.scss";
+
+.infor-form {
+    width: 100%;
+    margin: 0.5rem;
+
+    @include displaySet(space-between, center, wrap, false);
+    p {
+        margin: 0;
+    }
+    & > * {
+        width: 50%;
+    }
+    & > button {
+        margin: 0 auto;
+        margin-top: 2rem;
+        background: #ed6c63 !important;
+        color: $colorW;
+    }
+    & > div {
+        padding: 1rem;
+        padding-left: 0px;
+        p {
+            padding-top: 1rem;
+        }
+        // @include displaySet(start, center, nowrap, false);
+    }
+}
+@media screen and(max-width : 505px) {
+    .infor-form {
+        width: 100%;
+        margin: 0.5rem;
+        font-size: 0.8rem;
+        & input {
+            font-size: 0.8rem;
+        }
+        @include displaySet(space-between, center, wrap, false);
+        p {
+            margin: 0;
+        }
+        & > * {
+            width: 50%;
+        }
+        & > button {
+            margin: 0 auto;
+            margin-top: 2rem;
+            background: #ed6c63 !important;
+            color: $colorW;
+        }
+        & > div {
+            padding: 1rem;
+            padding-left: 0px;
+            p {
+                padding-top: 1rem;
+            }
+            // @include displaySet(start, center, nowrap, false);
+        }
+    }
+}

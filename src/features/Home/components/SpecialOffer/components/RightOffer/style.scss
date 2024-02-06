@@ -1,0 +1,42 @@
+@import "../../../../../../assets/style/valiable.scss";
+
+.offer__right {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -20px;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: -1;
+
+        border: 1px solid $colorMain;
+    }
+}
+@media screen and (max-width: 810px) {
+    .offer__right {
+        position: relative;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .offer__right {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        &::before {
+            content: none;
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
+}

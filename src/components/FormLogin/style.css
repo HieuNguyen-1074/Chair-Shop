@@ -1,0 +1,42 @@
+.formlogin {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.formlogin h1 {
+  text-align: center;
+}
+
+.formlogin input {
+  width: 100%;
+}
+
+.formlogin__bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 480px) {
+  .formlogin {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .formlogin h1 {
+    text-align: center;
+  }
+  .formlogin input {
+    height: 1rem !important;
+  }
+  .formlogin__bottom {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}

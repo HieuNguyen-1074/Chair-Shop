@@ -1,0 +1,77 @@
+@import "../../../../../../assets/style/mixi.scss";
+@import "../../../../../../assets/style/valiable.scss";
+
+.newproduct__top {
+    @include displaySet(space-between, end, nowrap, false);
+    margin: 0 0.5rem;
+    &--left {
+        & > h1 {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            margin: 0;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 110%;
+                right: -50%;
+                width: 150%;
+
+                height: 3px;
+                background: $colorMain;
+            }
+        }
+    }
+    &--right {
+        .prev,
+        .next {
+            background-color: $colorMain !important;
+            width: 30px;
+            height: 30px;
+            padding: 0.2rem;
+            margin-left: 0.2rem;
+            polygon {
+                fill: $colorW !important;
+            }
+            &:hover {
+                background-color: $blackColor !important;
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+@media screen and (max-width: 765px) {
+    .newproduct__top {
+        @include displaySet(space-between, end, nowrap, false);
+
+        &--left {
+            & > h1 {
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                margin: 0;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 110%;
+                    right: -50%;
+                    width: 150%;
+
+                    height: 3px;
+                    background: $colorMain;
+                }
+            }
+        }
+        &--right {
+            .prev,
+            .next {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}

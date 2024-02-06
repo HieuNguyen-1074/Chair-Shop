@@ -1,0 +1,25 @@
+@import "../../assets/style/mixi.scss";
+@import "../../assets/style/valiable.scss";
+.top-manage {
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.4rem;
+
+    @include displaySet(space-between, center, nowrap, false);
+    .right {
+        @include displaySet(flex-end, center, nowrap, false);
+        p {
+            margin-bottom: 0 !important;
+            align-self: flex-end;
+            text-transform: capitalize;
+        }
+        & > div {
+            margin-left: 1rem;
+            & p {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+    &-left {
+        @include displaySet(flex-start, center, nowrap, false);
+    }
+}

@@ -1,0 +1,98 @@
+.subscribe {
+  margin: 2rem auto;
+  margin-top: 3rem;
+  max-width: 60rem;
+  padding: 0 3rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.subscribe .container {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.subscribe__left {
+  text-align: center;
+}
+
+.subscribe__left h1 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.subscribe__left p {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.subscribe__right form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.subscribe__right form input[type="text"] {
+  height: 100%;
+  padding: 0.4rem 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px 0px 0px 3px;
+  -webkit-border-radius: 3px 0px 0px 3px;
+  -moz-border-radius: 3px 0px 0px 3px;
+  -ms-border-radius: 3px 0px 0px 3px;
+  -o-border-radius: 3px 0px 0px 3px;
+}
+
+.subscribe__right form button {
+  text-transform: uppercase;
+  padding: .6rem 2rem;
+  margin: 0px;
+  margin-left: 0.3rem !important;
+  background: #ed6c63;
+  color: aliceblue;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.subscribe__right form button:hover {
+  background: black;
+}
+
+@media screen and (max-width: 790px) {
+  .subscribe {
+    padding: 0 1rem;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .subscribe .container {
+    padding: 2rem 1rem;
+    height: 30vh;
+  }
+  .subscribe__left h1 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .subscribe__left h1 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  .subscribe__right form input[type="text"] {
+    font-size: 0.8rem;
+  }
+  .subscribe__right form button {
+    font-size: 0.7rem;
+  }
+}

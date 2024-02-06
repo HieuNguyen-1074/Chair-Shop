@@ -1,0 +1,122 @@
+.tab:hover {
+  background: #fff;
+}
+
+.MuiBox-root {
+  padding: 2rem 0 !important;
+}
+
+@media screen and (max-width: 995px) {
+  .makeStyles-root-37 {
+    padding: 0 1rem !important;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .tab {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .tab {
+    font-size: 0.8rem;
+  }
+  .MuiMenu-list li {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .MuiTable-root * {
+    font-size: 0.6rem !important;
+  }
+  .tab {
+    font-size: 0.6rem;
+  }
+  .await input,
+  .confirm input,
+  .received input {
+    font-size: 0.6rem !important;
+  }
+  .await .MuiOutlinedInput-root,
+  .confirm .MuiOutlinedInput-root,
+  .received .MuiOutlinedInput-root {
+    font-size: 0.6rem !important;
+    position: relative;
+    border-radius: 4px;
+  }
+  .await .right span,
+  .confirm .right span,
+  .received .right span {
+    font-size: 0.6rem !important;
+  }
+  .await .right .MuiPopover-paper ul li,
+  .confirm .right .MuiPopover-paper ul li,
+  .received .right .MuiPopover-paper ul li {
+    font-size: 0.6rem !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .tab {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 887px) {
+  .await input,
+  .confirm input,
+  .received input {
+    font-size: 0.8rem;
+  }
+  .await .MuiOutlinedInput-root,
+  .confirm .MuiOutlinedInput-root,
+  .received .MuiOutlinedInput-root {
+    font-size: 0.8rem;
+    position: relative;
+    border-radius: 4px;
+  }
+  .await .right span,
+  .confirm .right span,
+  .received .right span {
+    font-size: 0.8rem;
+  }
+  .await .right .MuiPopover-paper ul li,
+  .confirm .right .MuiPopover-paper ul li,
+  .received .right .MuiPopover-paper ul li {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .await .top-manage,
+  .confirm .top-manage,
+  .received .top-manage {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  .await input,
+  .confirm input,
+  .received input {
+    padding: 0.4rem;
+  }
+  .await .MuiOutlinedInput-root,
+  .confirm .MuiOutlinedInput-root,
+  .received .MuiOutlinedInput-root {
+    padding: 0rem;
+  }
+  .await .MuiSelect-select,
+  .confirm .MuiSelect-select,
+  .received .MuiSelect-select {
+    padding: 0.6rem !important;
+  }
+  .await .right,
+  .confirm .right,
+  .received .right {
+    flex-direction: column;
+  }
+}

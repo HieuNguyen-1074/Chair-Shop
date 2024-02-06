@@ -1,0 +1,90 @@
+.wrapper__left {
+  text-transform: uppercase;
+}
+
+.wrapper__left p {
+  background: #ed6c63;
+  width: fit-content;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  color: #fff;
+}
+
+.wrapper__left h3 {
+  font-size: 1rem;
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper__left button {
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  padding: 0.5rem 1.3rem;
+  background: #ed6c63;
+  color: aliceblue;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.wrapper__left button:hover {
+  background: black;
+}
+
+@media only screen and (max-width: 830px) {
+  .wrapper__left p {
+    font-size: 0.7rem;
+  }
+  .wrapper__left h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .wrapper__left p {
+    font-size: 0.7rem;
+  }
+  .wrapper__left h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .wrapper__left p {
+    font-size: 0.6rem;
+  }
+  .wrapper__left h1 {
+    font-size: 1.5rem;
+  }
+  .wrapper__left h3 {
+    font-size: 0.8rem;
+  }
+  .wrapper__left button {
+    text-transform: uppercase;
+    margin-top: 0.6rem;
+    padding: 0.5rem 1.3rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .wrapper__left {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .wrapper__left p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .wrapper__left h1 {
+    font-size: 2rem;
+  }
+}

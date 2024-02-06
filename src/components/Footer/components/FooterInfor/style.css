@@ -1,0 +1,17 @@
+.footer__information h1 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.footer__information h1 a {
+  padding-top: 0.2rem;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.footer__information--list a {
+  display: block;
+  margin-top: 0.3rem;
+  text-decoration: none !important;
+}

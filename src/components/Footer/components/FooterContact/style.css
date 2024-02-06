@@ -1,0 +1,51 @@
+.footer__contact img {
+  width: 90px;
+}
+
+.footer__contact--main {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.footer__contact--main p {
+  padding-top: 0.2rem;
+  margin-bottom: 0px !important;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: black;
+  text-decoration: none !important;
+}
+
+.footer__contact--gettouch {
+  padding-top: 1.5rem;
+}
+
+.footer__contact--gettouch h1 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.footer__contact--gettouch-list a:not(:last-of-type) {
+  padding-right: 0.5rem;
+}
+
+.footer__contact--gettouch-list a img {
+  width: 20px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.footer__contact--gettouch-list a img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}

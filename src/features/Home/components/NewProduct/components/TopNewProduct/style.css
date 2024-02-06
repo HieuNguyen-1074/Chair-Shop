@@ -1,0 +1,79 @@
+.newproduct__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0 0.5rem;
+}
+
+.newproduct__top--left > h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin: 0;
+  position: relative;
+}
+
+.newproduct__top--left > h1::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  right: -50%;
+  width: 150%;
+  height: 3px;
+  background: #ed6c63;
+}
+
+.newproduct__top--right .prev,
+.newproduct__top--right .next {
+  background-color: #ed6c63 !important;
+  width: 30px;
+  height: 30px;
+  padding: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+.newproduct__top--right .prev polygon,
+.newproduct__top--right .next polygon {
+  fill: #fff !important;
+}
+
+.newproduct__top--right .prev:hover,
+.newproduct__top--right .next:hover {
+  background-color: black !important;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 765px) {
+  .newproduct__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .newproduct__top--left > h1 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+    position: relative;
+  }
+  .newproduct__top--left > h1::before {
+    content: "";
+    position: absolute;
+    top: 110%;
+    right: -50%;
+    width: 150%;
+    height: 3px;
+    background: #ed6c63;
+  }
+  .newproduct__top--right .prev,
+  .newproduct__top--right .next {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../../../../../../../assets/style/valiable.scss";
+
+@import "../../../../../../../../assets/style/mixi.scss";
+@import "../../../../../../../../assets/style/valiable.scss";
+
+.deal__right {
+    @include displaySet(stretch, center, nowrap, false);
+    position: relative;
+    .prev,
+    .next {
+        background-color: $colorMain !important;
+        width: 30px;
+        height: 30px;
+        padding: 0.2rem;
+        margin-left: 0.2rem;
+        polygon {
+            fill: $colorW !important;
+        }
+        &:hover {
+            background-color: $blackColor !important;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+    }
+    &--btn {
+        text-transform: capitalize;
+        margin: 0 auto;
+        background: rgba($color: $blackColor, $alpha: 0.1);
+
+        border: none;
+
+        padding: 0.3rem 2rem;
+        margin-right: 1rem;
+
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-left: 0.1rem;
+            path {
+                stroke: rgba($color: $blackColor, $alpha: 1) !important;
+            }
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+
+        a {
+            color: $blackColor;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        &:hover {
+            background: $blackColor;
+
+            a {
+                color: $colorW;
+            }
+            svg {
+                transform: translateX(10px);
+                -webkit-transform: translateX(10px);
+                -moz-transform: translateX(10px);
+                -ms-transform: translateX(10px);
+                -o-transform: translateX(10px);
+
+                path {
+                    stroke: $colorW !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .deal__right {
+        .prev,
+        .next {
+            width: 25px;
+            height: 25px;
+        }
+        &--btn {
+            padding: 0.2rem 1.3rem;
+            margin-right: 1rem;
+            font-size: 0.8rem;
+        }
+    }
+}

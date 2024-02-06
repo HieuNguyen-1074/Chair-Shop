@@ -1,0 +1,45 @@
+@import "../../../../../../assets/style/mixi.scss";
+@import "../../../../../../assets/style/valiable.scss";
+
+.deal__top {
+    @include displaySet(space-between, center, nowrap, false);
+    margin: auto 0.3rem;
+    & > h1 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 110%;
+            right: -50%;
+            width: 150%;
+
+            height: 3px;
+            background: $colorMain;
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    .deal__top {
+        @include displaySet(space-between, center, nowrap, false);
+
+        & > h1 {
+            font-size: 1.1rem;
+            text-transform: capitalize;
+
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 110%;
+                right: -50%;
+                width: 150%;
+
+                height: 3px;
+                background: $colorMain;
+            }
+        }
+    }
+}

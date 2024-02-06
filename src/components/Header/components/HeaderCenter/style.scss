@@ -1,0 +1,140 @@
+@import "../../../../assets/style/mixi.scss";
+@import "../../../../assets/style/valiable.scss";
+
+.header__center {
+    padding: 0.3rem 0rem;
+    padding-top: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    &--logo {
+        width: 150px;
+    }
+
+    @include displaySet(space-between, center, nowrap, false);
+
+    &--right {
+        text-transform: capitalize;
+        @include displaySet(space-between, center, nowrap, false);
+
+        .help {
+            @include displaySet(center, center, nowrap, false);
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    &--form {
+        border: 1px solid rgba($color: $blackColor, $alpha: 0.2);
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        @include displaySet(space-between, center, nowrap, false);
+
+        button {
+            height: 100%;
+            margin-top: 0;
+            padding: 0.4rem 1rem;
+            border: none;
+
+            background: $colorMain;
+
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+
+            color: $colorW;
+            font-size: 1.2rem;
+
+            svg {
+                margin-top: -0.3rem;
+            }
+        }
+        input[type="text"] {
+            font-size: 1.2rem;
+            padding: 0.3rem 1.4rem;
+            border: none;
+        }
+    }
+}
+@media only screen and (max-width: 730px) {
+    .header__center {
+        &--logo {
+            width: 100px;
+        }
+
+        @include displaySet(space-between, center, nowrap, false);
+
+        &--right {
+            text-transform: capitalize;
+            @include displaySet(space-between, center, nowrap, false);
+
+            .help {
+                @include displaySet(center, center, nowrap, false);
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        &--form {
+            height: 40px;
+
+            button {
+                svg {
+                    margin-top: -0.7rem;
+                }
+            }
+            input[type="text"] {
+                font-size: 1rem;
+                padding: 0.3rem 1rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 560px) {
+    .header__center {
+        &--logo {
+            width: 70px;
+        }
+
+        &--form {
+            height: 30px !important;
+
+            button {
+                padding: 0 10px;
+                svg {
+                    width: 15px;
+
+                    margin-top: -0.37rem;
+                }
+            }
+            input[type="text"] {
+                height: 20px !important;
+                font-size: 0.7rem;
+                padding: 0.2rem 0.7rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 460px) {
+    .header__center {
+        &--logo {
+            width: 70px;
+        }
+
+        &--form {
+            height: 30px !important;
+
+            input[type="text"] {
+                width: 100px;
+
+                padding: 0.2rem 0.8rem;
+            }
+        }
+    }
+}

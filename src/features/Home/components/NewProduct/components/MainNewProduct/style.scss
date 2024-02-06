@@ -1,0 +1,25 @@
+@import "../../../../../../assets/style/mixi.scss";
+
+.mainnewproduct {
+    @include displaySet(space-between, center, nowrap, false);
+    margin-left: 0.2rem;
+    & > img {
+        width: 333px;
+    }
+}
+@media only screen and (max-width: 870px) {
+    .mainnewproduct {
+        & > img {
+            align-self: flex-start;
+            margin-top: 4rem;
+            width: 300px;
+        }
+    }
+}
+@media only screen and (max-width: 830px) {
+    .mainnewproduct {
+        & > img {
+            display: none;
+        }
+    }
+}
